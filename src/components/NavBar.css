@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content:space-around;
+    min-height: 90px;
+    align-items: center;
+}
+
+.header-name{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: red;
+}
+
+.lower-header{
+    display: flex;
+    background-color: rgb(76, 165, 255);
+    min-height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    color: white;
+}
+.header-searchbar{
+    font-size: 15px;
+}
+
+.header-icon{
+    font-size: 20px;
+    color:orange;
+}
