@@ -2,7 +2,7 @@
   "name": "stocks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://virajvchavan.github.io/stocks",
+  "homepage": "https://ideathonpec.herokuapp.com/",
   "dependencies": {
     "bulma-pageloader": "^2.1.0",
     "chart.js": "^2.7.3",
