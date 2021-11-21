@@ -1,15 +1,17 @@
+
 .container{
-  margin-top: 30px !important;
+  margin-top: 10vh !important;
   margin-bottom: 20px !important;
 }
 
 .card-header{
-  background: #4a4a4a;
+  background: white;
   border-radius: 1px;
 }
 
 .card-header-title{
-  color: white !important;
+  color: #8860D0 !important;
+  font-size: 4vh;
 }
 
 #stocks_list .card-content{

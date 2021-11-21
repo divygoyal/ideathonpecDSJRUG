@@ -1,8 +1,35 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import "./info.css";
+import info from './info.jpg';
 const Appi=()=>{
     return(
+    <div>
+      <div className="get-started">
+        <div className="get-started-head">let's get you <u>started</u> .</div>
+        <div className="get-started-cont">
+          
+          <div className="get-started-points">
+            <ol type="a">
+              <li>
+                what is stock market
+              </li>
+              <li>
+                why know about stock terminology
+              </li>
+              <li>
+                basic stock terminology
+              </li>
+            </ol>
+            
+          </div>
+          <div className="info-image">
+              <img src={info} alt="info"/>
+            </div>
+        </div>
+
+      </div>
+      <br />
     <div className="stock" id="stock">
         <p className="stock1">
         What is a stock market?
@@ -143,6 +170,7 @@ const Appi=()=>{
         <br /> <text className="void">4. Derivatives</text><br />
          The market value of shares listed on a stock market continues to fluctuate. It is difficult to fix the value of a share at one particular price. This is where derivatives enter the picture. Derivatives are instruments that allow you to trade at a price that has been fixed by you today. To put it simply, you enter into an agreement where you choose to either sell or buy a share or any other instrument at a certain fixed price.
         </p>
+    </div>
     </div>
     
     
