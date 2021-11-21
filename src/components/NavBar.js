@@ -2,7 +2,18 @@ import React from "react";
 import "./NavBar.css";
 import Appi from "./info.js";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import App from "../App";
+
+var datetime = () => {
+
+    var showdate = new Date();
+    var dt=showdate.toDateString();
+    //var displaytodaydate = showdate.getDate()+'/'+(showdate.getMonth()+1)+'/'+showdate.getFullYear();
+    return (
+        <div className="time-date">
+            {dt}
+        </div>
+    )
+}
 
 const NavBar=()=>{
     return (
@@ -12,17 +23,11 @@ const NavBar=()=>{
                 <div className="header-name">
                     The void
                 </div>
-                <div className="header-searchbar">
-                    <div className="ui search">
-                        <div className="ui icon input">
-                            <input className="prompt" type="text" placeholder="Search here" />
-                            <i className="search icon"></i>
-                        </div>
-                        <div className="results"></div>
-                    </div>
-                </div>
                 <div className="header-icon">
                     <i className="moon icon"></i>
+                </div>
+                <div >
+                    {datetime()}
                 </div>
             </div>
             <div className="lower-header">

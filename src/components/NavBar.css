@@ -1,31 +1,78 @@
+*{
+    font-family: sans-serif;
+}
 .header{
     display: flex;
     justify-content:space-around;
-    min-height: 90px;
+    min-height: 10vh;
     align-items: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:white;
+
 }
 
 .header-name{
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: red;
+    font-weight: 600;
+    color: #8860D0;
+    font-size: 6vh;
+    animation: animate 4s linear infinite alternate-reverse;
+    
+}
+
+@keyframes animate {
+    100%{
+        color:#8c59f0;
+    }
+    50%{
+        color:#547fec;
+    }
+    0%{
+        color: #37b8eb;
+    }
 }
 
 .lower-header{
     display: flex;
-    background-color: rgb(76, 165, 255);
-    min-height: 50px;
+    background-color: #5680E9;
+    min-height: 7vh;
     justify-content: space-around;
     align-items: center;
-    font-size: 28px;
+    font-size: 3.5vh;
     color: white;
+    margin-top: 10vh;
 }
 .header-searchbar{
-    font-size: 15px;
+    font-size: 1vh;
 }
 
 .header-icon{
-    font-size: 20px;
+    font-size: 4vh;
     color:orange;
+}
+.lower-header i{
+    color:white
+}
+
+.lower-header i::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: width .3s ;
+}
+.lower-header i:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+.lower-header i:hover{
+    color:lightblue
+}
+.time-date{
+    font-size: 2.75vh;
+    font-weight: 600;
+    animation: animate 7s linear infinite alternate-reverse;
 }
