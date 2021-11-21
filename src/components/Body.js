@@ -9,15 +9,39 @@ const stockInfoCard = (props) => {
                 {props}
             </div>
             <div className="stock-info-card-two">
-                Prev. Close:---
+            <hr />
+                Prev. Close:{RandomNumber()}
             </div>
             <div className="stock-info-card-three">
-                Prev. Open:---
+            <hr />
+                Prev. Open:{RandomNumber()}
             </div>
         </div>
         
     );
 }
+
+const RandomNumber = () => {
+    const [number, setNumber] = React.useState(0);
+    
+    // add side effect to component
+    React.useEffect(() => {
+      // create interval
+      const interval = setInterval(
+        // set number every 5s
+        () => setNumber(Math.floor(Math.random() * 1000 + 1))+100,
+        5000
+      );
+  
+      // clean up interval on unmount
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+  
+    return <p>{number}</p>;
+  };
+
 
 const stockNewsCard = (headline,content) => {
     return (
@@ -40,11 +64,11 @@ const Body = () => {
                     Top Potential Stocks
                 </div>
                 <div className="stock-info-all-cards">
-                    {stockInfoCard('RIL')}
-                    {stockInfoCard('PVR')}
-                    {stockInfoCard('IRCTC')}
-                    {stockInfoCard('SBIN')}
-                    {stockInfoCard('HDFC')}
+                    {stockInfoCard('YHOO')}
+                    {stockInfoCard('EBR')}
+                    {stockInfoCard('EVI')}
+                    {stockInfoCard('INTC')}
+                    {stockInfoCard('AKS')}
                 </div>
                 <div className="see-more-link">
                     <a href="/">see more..</a>
