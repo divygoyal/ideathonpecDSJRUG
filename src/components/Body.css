@@ -10,9 +10,12 @@
     display: flex;
     font-size: 5vh;
     font-weight: 600;
-    color:#5680E9;
+    background:linear-gradient(#5680E9,#5ab9ea);
+    color:white;
     min-height: 35px;
-    margin-top: 5vh;
+    margin-top: 2vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
     justify-content: space-around;
 }
 .stock-info-card{
@@ -29,12 +32,15 @@
     display: flex;
     margin-bottom: 1vh;
     justify-content: center;
-    font-size: 3.5vh;   
+    font-size: 3.8vh;   
+    font-weight: 600;
 }
 .stock-info-card-two{
+    text-align: center;
     font-size: 3vh;
 }
 .stock-info-card-three{
+    text-align: center;
     font-size: 3vh;
 }
 .see-more-link{
@@ -43,7 +49,7 @@
     min-height: 20px;
     align-items: center;
     margin-right: 50px ;
-    margin-bottom:10vh ;
+    margin-bottom:8vh ;
     font-size: 15px;
     text-decoration: underline;
 }
