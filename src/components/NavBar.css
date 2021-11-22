@@ -3,6 +3,7 @@
 }
 .header{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-around;
     min-height: 10vh;
     align-items: center;
@@ -32,6 +33,7 @@
 
 .lower-header{
     display: flex;
+    flex-wrap: wrap;
     background-color: #5680E9;
     min-height: 8vh;
     justify-content: space-around;
