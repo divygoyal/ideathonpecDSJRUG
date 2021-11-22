@@ -1,0 +1,101 @@
+*{
+    font-family: sans-serif;
+}
+
+.stock-info-all-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.stock-info-header{
+    display: flex;
+    font-size: 5vh;
+    font-weight: 600;
+    background:linear-gradient(#5680E9,#5ab9ea);
+    color:white;
+    min-height: 35px;
+    margin-top: 2vh;
+    padding-top: 1vh;
+    margin-bottom: 3vh;
+    justify-content: space-around;
+}
+.stock-info-card{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2vh;
+    background:radial-gradient(#5680E9,#5ab9ea);
+    color: white;
+    padding: 3vh 5vh 3vh 5vh;
+    border-radius: 10px;
+}
+.stock-info-card-one{
+    display: flex;
+    margin-bottom: 1vh;
+    justify-content: center;
+    font-size: 3.8vh;   
+    font-weight: 600;
+}
+.stock-info-card-two{
+    text-align: center;
+    font-size: 3vh;
+}
+.stock-info-card-three{
+    text-align: center;
+    font-size: 3vh;
+}
+.see-more-link{
+    display: flex;
+    justify-content: right;
+    min-height: 20px;
+    align-items: center;
+    margin-right: 50px ;
+    margin-bottom:8vh ;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.stock-news-header{
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    color: white;
+    font-weight: 600;
+    margin-top: 1vh;
+    padding-top: 1.6vh;
+    align-items: center;
+}
+
+.stock-news-container{
+    margin: 70px 70px 100px 70px;
+    outline: 20px solid #ffffff;
+    outline-offset: 25px;
+    border-radius: 1px;
+    
+}
+
+.stock-news-card{
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.stock-news-card-head{
+    padding:8px;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4vh;
+    font-weight: bold;
+}
+.stock-news-card-content{
+    font-size: 3vh;
+    color: white;
+    padding: 1vh;
+}
+
+.stock-info-card:hover{
+    color:lightblue;
+    transition : .3s;
+}
+.news-component{
+    background: linear-gradient(to bottom,#5680E9,#5ab9ea,#8860d0);
+    text-align: center;
+}
