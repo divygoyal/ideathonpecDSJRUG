@@ -4,6 +4,7 @@
 
 .stock-info-all-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .stock-info-header{
@@ -45,6 +46,7 @@
 }
 .see-more-link{
     display: flex;
+    flex-wrap: wrap;
     justify-content: right;
     min-height: 20px;
     align-items: center;
