@@ -1,13 +1,13 @@
 .stock{
-    background-image:url("./stock.jpg") ;
-    background-size: cover;
+    background: linear-gradient(to bottom,#5680E9,#8860d0,#5ab9ea);
 }
 .stock1{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
     padding-top: 20px;
+    
 }
 .stock2{
     color:white;
@@ -15,7 +15,7 @@
     margin-left: 20px;
 }
 .stock3{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
@@ -26,127 +26,161 @@
     margin-left: 20px;
 }
 .stock5{
-    color:blue;
+    color:#ffffff;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock6{
-    color:yellowgreen;
+    color:#ffffff;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock7{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock8{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock9{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock10{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock11{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock12{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock13{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock14{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock15{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock16{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock17{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock18{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock19{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 
 .stock20{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock21{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock22{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock23{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock24{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock25{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock26{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .void{
-    color:red;
+    color:rgb(247, 109, 109);
+}
+
+.get-started{
+    background-color: #5680E9;
+    color: white;
+}
+.get-started-head{
+    font-size: 8vh;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 2vh;
+    padding-top: 4vh;
+    padding-left: 15vh;
+
+}
+.get-started-points{
+    font-size: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding:1vh 10vh 5vh 5vh;
+    text-transform: capitalize;
+}
+.get-started-points li{
+    padding-bottom:2vh ;
+}
+
+.info-image{
+    width: 35vh;
+    padding-bottom: 5vh;
+}
+.get-started-cont{
+    display: flex;
+    justify-content: space-around;
+
 }

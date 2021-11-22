@@ -16,17 +16,13 @@
 
 .header-name{
     font-weight: 600;
-    color: #8860D0;
     font-size: 6vh;
-    animation: animate 4s linear infinite alternate-reverse;
+    animation: animate 5s linear infinite alternate-reverse;
     
 }
 
 @keyframes animate {
     100%{
-        color:#8c59f0;
-    }
-    50%{
         color:#547fec;
     }
     0%{
@@ -37,7 +33,7 @@
 .lower-header{
     display: flex;
     background-color: #5680E9;
-    min-height: 7vh;
+    min-height: 8vh;
     justify-content: space-around;
     align-items: center;
     font-size: 3.5vh;
@@ -74,5 +70,5 @@
 .time-date{
     font-size: 2.75vh;
     font-weight: 600;
-    animation: animate 7s linear infinite alternate-reverse;
+    animation: animate 5s linear infinite alternate-reverse;
 }
