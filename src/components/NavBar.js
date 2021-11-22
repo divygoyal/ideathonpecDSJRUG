@@ -17,7 +17,6 @@ var datetime = () => {
 
 const NavBar=()=>{
     return (
-        <Router>
         <div>
             <div className="header">
                 <div className="header-name">
@@ -31,7 +30,7 @@ const NavBar=()=>{
                 </div>
             </div>
             <div className="lower-header">
-            <Link to={"/home"}>
+            <Link to={"/"}>
                 <div className="header-home-icon">
                     <i className="home icon"></i>
                 </div>
@@ -46,10 +45,6 @@ const NavBar=()=>{
                 </div>
             </div>
         </div>
-        <Routes>
-        <Route path="/info" element={<Appi />} />
-        </Routes>
-        </Router>
     );
 }
 
