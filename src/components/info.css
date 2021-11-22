@@ -3,7 +3,7 @@
     background-size: cover;
 }
 .stock1{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
@@ -11,145 +11,145 @@
     
 }
 .stock2{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock3{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock4{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock5{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock6{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock7{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock8{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock9{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock10{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock11{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock12{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock13{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock14{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock15{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock16{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock17{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock18{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock19{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 
 .stock20{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock21{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock22{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock23{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock24{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .stock25{
-    color:blue;
+    color:white;
     font-size: 40px;
     font: bold;
     margin-left: 20px;
 }
 .stock26{
-    color:black;
+    color:white;
     font-size: 25px;
     margin-left: 20px;
 }
 .void{
-    color:red;
+    color:black;
 }
 
 .get-started{
@@ -157,7 +157,7 @@
     color: white;
 }
 .get-started-head{
-    color: black;
+    color: white;
     font-size: 8vh;
     font-weight: 600;
     text-transform: capitalize;
@@ -167,7 +167,7 @@
 
 }
 .get-started-points{
-    color: red;
+    color: white;
     font-size: 4vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
