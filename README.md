@@ -1,3 +1,7 @@
+Live site - https://ideathonpec.herokuapp.com/
+# make sure to allow insure content 
+
+
 Aapplication built in React.
 
 What it does: Show real time stock market data in the form of table and graphs
