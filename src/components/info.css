@@ -153,7 +153,7 @@
 }
 
 .get-started{
-    background-color: #5680E9;
+    background-color: var(--secondaryColor);
     color: white;
 }
 .get-started-head{

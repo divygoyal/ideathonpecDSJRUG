@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background:white;
+    background:var(--navbarColor);
 
 }
 
@@ -24,23 +24,23 @@
 
 @keyframes animate {
     100%{
-        color:#547fec;
+        color:var(--animateColorOne);
     }
     0%{
-        color: #37b8eb;
+        color: var(--animateColorTwo);
     }
 }
 
 .lower-header{
     display: flex;
     flex-wrap: wrap;
-    background-color: #5680E9;
+    background-color:var(--lowernavbar);
     min-height: 12vh;
     justify-content: space-around;
     align-items: center;
     font-size: 3.5vh;
     color: white;
-    margin-top: 10vh;
+    margin-top: 12vh;
 }
 .header-searchbar{
     font-size: 1vh;

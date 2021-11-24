@@ -11,12 +11,14 @@
     display: flex;
     font-size: 5vh;
     font-weight: 600;
-    background:linear-gradient(#5680E9,#5ab9ea);
+    background:var(--secondaryColor);
     color:white;
+    border-top: 1vh solid white;
     min-height: 35px;
-    margin-top: 2vh;
-    padding-top: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     margin-bottom: 3vh;
+    align-content: center;
     justify-content: space-around;
 }
 .stock-info-card{
@@ -24,7 +26,7 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 2vh;
-    background:radial-gradient(#5680E9,#5ab9ea);
+    background:radial-gradient(var(--stockcardOne),var(--stockcardTwo));
     color: white;
     padding: 3vh 5vh 3vh 5vh;
     border-radius: 10px;
@@ -98,6 +100,6 @@
     transition : .3s;
 }
 .news-component{
-    background: linear-gradient(to bottom,#5680E9,#5ab9ea,#8860d0);
+    background: linear-gradient(to bottom,var(--stockcardOne),var(--stockcardTwo),var(--stockcardThree));
     text-align: center;
 }
