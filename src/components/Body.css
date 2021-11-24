@@ -57,6 +57,7 @@
     font-size: 15px;
     text-decoration: underline;
 }
+
 .stock-news-header{
     display: flex;
     justify-content: center;
@@ -97,7 +98,8 @@
 
 .stock-info-card:hover{
     color:lightblue;
-    transition : .3s;
+    transition : .3s ease;
+    transform: scale(1.1);
 }
 .news-component{
     background: linear-gradient(to bottom,var(--stockcardOne),var(--stockcardTwo),var(--stockcardThree));

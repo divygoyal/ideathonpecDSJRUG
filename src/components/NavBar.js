@@ -93,15 +93,16 @@ const NavBar=()=>{
     return (
         <div>
             <div className="header">
+                <div >
+                    {datetime()}
+                </div>
                 <div className="header-name">
                     The void
                 </div>
                 <div className="header-icon">
                     <i className={modeIcon} onClick={handleClick}></i>
                 </div>
-                <div >
-                    {datetime()}
-                </div>
+                
             </div>
             <div className="lower-header">
             <Link to={"/"}>
