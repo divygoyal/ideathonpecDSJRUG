@@ -6,13 +6,15 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NavBar from './components/NavBar';
 import Body from './components/Body';
-import Appi from './components/info'
+import Appi from './components/info';
+import Footer from './components/Footer';
 const Rockey=()=>{
     return(
         <div>
             <NavBar />
             <Body />
             <App />
+            <Footer />
         </div>
 
     );

@@ -18,11 +18,12 @@ var datetime = () => {
 const darkModeIcon = 'moon icon';
 const lightModeIcon = 'sun icon';
 
+
+
 const NavBar=()=>{
 
     const [darkMode, setDarkMode] = useState(false);
     const [modeIcon, setModeIcon] = useState(darkModeIcon);
-  
     
     const theme = {
       dark: {
@@ -35,6 +36,7 @@ const NavBar=()=>{
           stockcardOne : '#950740',
           stockcardTwo : '#c3073f',
           stockcardThree:'#8860d0',
+          footerColor : '#950740',
           bodyColor:'#1a1a1d',
           modeIcon: lightModeIcon,
       }, 
@@ -48,6 +50,7 @@ const NavBar=()=>{
           stockcardOne : '#5680e9',
           stockcardTwo : '#5ab9ea',
           stockcardThree:'#8860d0',
+          footerColor:'#8860d0',
           bodyColor:'white',
         modeIcon: darkModeIcon,
       }
@@ -67,6 +70,7 @@ const NavBar=()=>{
         document.documentElement.style.setProperty('--animateColorOne', theme.dark.animateColorOne);
         document.documentElement.style.setProperty('--animateColorTwo', theme.dark.animateColorTwo);
         document.documentElement.style.setProperty('--lowernavbar', theme.dark.lowernavbar);
+        document.documentElement.style.setProperty('--footerColor', theme.dark.footerColor);
   
         setModeIcon(theme.dark.modeIcon);
         
@@ -81,6 +85,7 @@ const NavBar=()=>{
         document.documentElement.style.setProperty('--animateColorOne', theme.light.animateColorOne);
         document.documentElement.style.setProperty('--animateColorTwo', theme.light.animateColorTwo);
         document.documentElement.style.setProperty('--lowernavbar', theme.light.lowernavbar);
+        document.documentElement.style.setProperty('--footerColor', theme.light.footerColor);
   
         setModeIcon(theme.light.modeIcon);
       }
