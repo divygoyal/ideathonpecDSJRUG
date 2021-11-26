@@ -16,7 +16,7 @@
 }
 
 .socials-icons{
-  display: grid;
+  display: flex;
   justify-content: center;
   grid-gap: 10px;
   font-size: 3.75vh;
@@ -34,4 +34,32 @@
 
 .footer-links{
   padding-top: 8vh;
+}
+
+.footer-headers::after{
+  content: '';
+  display: block;
+  width: 55%;
+  margin-left: 0.75vh;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer-headers{
+  padding-bottom: 1vh;
+}
+
+.madeby{
+  margin-top: 5vh;
+  font-style: italic;
+  animation:footer 5s linear infinite alternate-reverse;
+}
+
+@keyframes footer {
+  100%{
+      color:rgba(255, 255, 255, 0.658);
+  }
+  0%{
+      color: white
+  }
 }
