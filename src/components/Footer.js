@@ -10,7 +10,7 @@ const FooterComponent = () => {
           <img src={logo} className="logo"/>
         </div>
         <div className="footer-socials">
-          <div>
+          <div className="footer-headers">
             contact us
           </div>
           <div className="socials-icons">
@@ -18,9 +18,12 @@ const FooterComponent = () => {
             <i className="twitter icon" />
             <i className="facebook icon" />
           </div>
+          <div className="madeby">
+            made by the void
+          </div>
         </div>
         <div className="footer-links">
-          <div>
+          <div className="footer-headers">
             links
           </div>
           <ul className="links-content" style={{listStyleType:"disc"}}>
