@@ -9,7 +9,7 @@
 }
 .stock-info-header{
     display: flex;
-    font-size: 5vh;
+    font-size: 5vmin;
     font-weight: 600;
     background:var(--secondaryColor);
     color:white;
