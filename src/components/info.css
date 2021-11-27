@@ -1,9 +1,8 @@
 
 .heading{
-    color:white;
-    font-size: 5.25vh;
+    color:var(--newsheader);
+    font-size: 2em;
     text-align: center;
-    background-color: var(--secondaryColor);
     margin: 0%;
     font: bold;
     padding-top: 3vh;
@@ -11,11 +10,11 @@
 }
 
 .content{
-    color:white;
-    font-size: 3.25vh;
+    color:var(--newscontent);
+    font-size: 1.3em;
     margin: 0%;
     padding: 5px;
-    background-color: var(--secondaryColor);
+
 
 }
 /*
@@ -40,9 +39,9 @@ this is for reference please ignore delete this
 */
 
 .void{
-    color:white;
+    color:var(--newsheader);
     text-decoration: underline;
-    padding:1vh;
+    margin-top: 5px;
 }
 
 .get-started{

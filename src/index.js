@@ -8,7 +8,8 @@ import NavBar from './components/NavBar';
 import Body from './components/Body';
 import Appi from './components/info';
 import Footer from './components/Footer';
-const Rockey=()=>{
+import StockNews from './components/stockNews';
+const Home=()=>{
     return(
         <div>
             <NavBar />
@@ -20,21 +21,36 @@ const Rockey=()=>{
     );
 };
 
-const Hi=()=>{
+const Info=()=>{
     return(
         <div>
             <NavBar />
             <Appi />
+            <Footer />
         </div>
 
     );
 };
+
+const News=()=>{
+    return(
+        <div>
+            <NavBar />
+            <StockNews />
+            <Footer />
+        </div>
+
+    );
+};
+
+
 const Application =()=>{
     return(
         <Router>
         <Routes>
-            <Route exact path="/" element={<Rockey />}/>
-            <Route exact path="/info" element ={<Hi />}/>
+            <Route exact path="/" element={<Home />}/>
+            <Route exact path="/info" element ={<Info />}/>
+            <Route exact path="/news" element ={<News />}/>
         </Routes>
         </Router>
     );

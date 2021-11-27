@@ -11,16 +11,23 @@ const FooterComponent = () => {
         </div>
         <div className="footer-socials">
           <div className="footer-headers">
-            contact us
+            socials
           </div>
           <div className="socials-icons">
-            <i className="instagram icon" />
-            <i className="twitter icon" />
-            <i className="facebook icon" />
+            <a href="https://github.com/divygoyal/ideathonpecDSJRUG" target="_blank">
+            <i  class="github icon"></i>
+            </a>
+            <a>
+              <i className="instagram icon" />
+            </a>
+            <a>
+              <i className="twitter icon" />
+            </a>
+            <a>
+              <i className="facebook icon" />
+            </a>
           </div>
-          <div className="madeby">
-            made by the void
-          </div>
+          
         </div>
         <div className="footer-links">
           <div className="footer-headers">
@@ -32,7 +39,11 @@ const FooterComponent = () => {
             <li>news</li>
           </ul>
         </div>
+
       </div>
+        <div className="madeby">
+          made by the void team
+        </div>
     </div>
   );
 }

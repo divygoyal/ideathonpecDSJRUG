@@ -11,17 +11,20 @@ const Appi=()=>{
           
           <div className="get-started-points">
             <ol type="a">
-              <li>
-                what is stock market
-              </li>
-              <li>
-                why know about stock terminology
-              </li>
-              <li>
-                basic stock terminology
-              </li>
+              <li>What is stock market?</li>
+              <li>Why should you know about stock market terminology?</li>
+              <li>Basic Stock Market Terms</li>
+              <li>Stock Market Basics</li>
+              <li>What are shares?</li>
+              <li>Why do companies need shares?</li>
+              <li>What are stock exchanges and how many are there?</li>
+              <li>What are Nifty and Sensex?</li>
+              <li>What are Nifty and Sensex?</li>
+              <li>When can you conduct stock market transactions?</li>
+              <li>How do you make money from Stocks?</li>
+              <li>what is Share Market?</li>
+              <li>What Is Traded On The Share Market?</li>
             </ol>
-            
           </div>
           <div className="info-image">
               <img src={info} alt="info"/>
@@ -32,7 +35,7 @@ const Appi=()=>{
       <hr style={{margin:"0"}}/>
     <div className="stock" id="stock">
         <p className="heading">
-        What is a stock market?
+        What is stock market?
         </p>
         <p className="content">
         Stock market is a place where equity shares of companies are bought and sold by the participants (buyers and sellers of stocks). The participants can be investors and traders who seek profits over the short time or the long run. The investors mainly have a long-term horizon and benefit from capital appreciation over time. Traders, however, look for quick profits by focusing on the small price changes in equity shares which mostly last for a few minutes or the whole trading session.<br />
@@ -47,7 +50,7 @@ const Appi=()=>{
         <br /> Some of the most common terms used in the stock market are the bull and the bear market. When the stock market is on the rise and the economy is sound, you have a bull market. If the stock market experiences prolonged periods of price declines, you have a bear market. It’s typically a condition where the prices of securities fall by 20% from the recent highs
         </p>
         <p className="heading">
-        Basic Stock Market Terms you should know
+        Basic Stock Market Terms
         </p>
         <p className="content">
         Whether you are a budding or seasoned stock investor, knowledge of the basic terms used in the stock market is necessary. You will end up becoming not only a better investor but also a successful trader as your vocabulary on the stock market grows. Here is a glossary of basic terms that you need to know as an investor:
@@ -100,7 +103,7 @@ const Appi=()=>{
         Investors will be paying the company some money and in return get to be part owners. So when the value of shares rises, the value of shares investors own rises. Investors are however not lending money to the company so they are not creditors. These indeed share market basics for beginners because it is essential to understand why companies need shares at all.
         </p>
         <p className="heading">
-        What are stock exchanges and how many exchanges are there?
+        What are stock exchanges and how many are there?
         </p>
         <p className="content">
         Stock exchanges is a place or a platform where traders and buyers come together to buy and sell stocks. There are two primary stock exchanges in the country: Bombay Stock Exchange (BSE) and National Stock Exchange
@@ -124,7 +127,7 @@ const Appi=()=>{
         To know about the stock market basics in India, you should also know when you are permitted to buy and sell shares. The stock market business hours in India run from 9.15 a.m. to 3.30 p.m. There are a few days in the country when the stock market is shut, they are known as market holidays. Few examples of market holidays are Holi, Id, Independence Day, Republic Day etc.
         </p>
         <p className="heading">
-        How do you make money?
+        How do you make money from Stocks?
         </p>
         <p className="content">
         Naturally, when you buy shares at a lower price and sell it at a higher price, you earn the capital gain. However there are two ways you can do this and if you are a beginner, it is especially important for you to know the difference between stock trading basics and stock investment basics.

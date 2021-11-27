@@ -1,6 +1,11 @@
 *{
     font-family: sans-serif;
 }
+* i,a{
+    cursor: pointer;
+}
+
+
 .header{
     display: flex;
     justify-content: space-around;
@@ -20,25 +25,13 @@
 .header-name{
     font-weight: 600;
     justify-content: center;
-    font-size: 7vmin;
+    font-size: 6.85vmin;
     margin-right: 15vh;
     margin-left: 5vh;
-    animation: animate 5s linear infinite alternate-reverse;
+    animation: animate 1s linear infinite alternate-reverse;
     
 }
 
-.header-name:hover{
-    animation: animate 1s linear infinite alternate-reverse;
-}
-
-@keyframes animate {
-    100%{
-        color:var(--animateColorOne);
-    }
-    0%{
-        color: var(--animateColorTwo);
-    }
-}
 
 @keyframes animate {
     100%{
@@ -53,12 +46,12 @@
     display: flex;
     flex-wrap: wrap;
     background-color:var(--lowernavbar);
-    min-height: 12vh;
+    min-height: 8vh;
     justify-content: space-around;
     align-items: center;
     font-size: 3.5vh;
     color: white;
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 .header-searchbar{
     font-size: 1vh;
@@ -66,7 +59,7 @@
 
 .header-icon{
     font-size: 4vmin;
-    color:orange;
+    color:var(--iconColor);
     padding-right: 12vh;
     cursor: pointer;
     transition: 0.4s ease;
@@ -85,19 +78,24 @@
     width: 0%;
     height: 3px;
     background-color: rgb(255, 255, 255);
-    transition: width .3s ;
+    transition: width .3s ease;
 }
 .lower-header i:hover::after{
     width:100%;
-    transition: width .3s;
+    transition: width .3s ease;
 }
 .lower-header i:hover{
-    color:lightblue
+    color:var(--primaryColor);
 }
 .time-date{
-    font-size: 2.75vh;
-    font-weight: 600;
-    animation: animate 5s linear infinite alternate-reverse;
+    font-weight: 700;
+    color:var(--lowernavbar)
+}
+
+@media screen and (max-width:480px) {
+    .time-date{
+        display: none;
+    }
 }
 
 

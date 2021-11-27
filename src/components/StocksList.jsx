@@ -2,6 +2,7 @@ import React from 'react'
 import { Detector } from "react-detect-offline";
 import StockRow from './StockRow.jsx'
 import MarketTrendArrow from './MarketTrendArrow.jsx'
+import "./Dashboard.css";
 
 const StocksList = (props) => {
   return (

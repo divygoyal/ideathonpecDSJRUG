@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 var datetime = () => {
 
     var showdate = new Date();
-    var dt=showdate.toDateString();
-    //var displaytodaydate = showdate.getDate()+'/'+(showdate.getMonth()+1)+'/'+showdate.getFullYear();
+    //var dt=showdate.toDateString();
+    var dt = showdate.getDate()+'/'+(showdate.getMonth()+1)+'/'+showdate.getFullYear();
     return (
         <div className="time-date" style={{fontSize:"3.5vh"}}>
             {dt}
@@ -30,18 +30,21 @@ const NavBar=()=>{
           animateColorOne: '#950740',
           animateColorTwo: '#c2023b',
           lowernavbar: '#950740',
-          navbarColor:'#1a1a1d',
-          primaryColor : '#1a1a1d',
+          navbarColor:'rgba(0,0,0,0.85)',
+          primaryColor : '#121212',
           secondaryColor : '#950740',
           stockcardOne : '#950740',
           stockcardTwo : '#c3073f',
-          stockcardThree:'#8860d0',
+          newsback:'#262626',
           footerColor : '#950740',
-          bodyColor:'#1a1a1d',
+          newsheader:'#950740',
+          newscontent:'#950740',
+          bodyColor:'rgba(0,0,0,0.9)',
+          iconColor:'orange',
           modeIcon: lightModeIcon,
       }, 
       light: {
-          navbarColor : 'white',
+          navbarColor : 'rgba(229, 236, 255,0.92)',
           animateColorOne: '#5680e9',
           lowernavbar:'#5680E9',
           animateColorTwo: '#5ab9ea',
@@ -49,9 +52,12 @@ const NavBar=()=>{
           secondaryColor : '#5680e9',
           stockcardOne : '#5680e9',
           stockcardTwo : '#5ab9ea',
-          stockcardThree:'#8860d0',
-          footerColor:'#8860d0',
+          newsback:'rgb(102, 140, 255)',
+          newsheader:'#5680E9',
+          newscontent:'#8860d0',
+          footerColor:'#8c66ff',
           bodyColor:'white',
+          iconColor:'rgba(0,0,0,0.7)',
         modeIcon: darkModeIcon,
       }
     };
@@ -65,12 +71,15 @@ const NavBar=()=>{
         document.documentElement.style.setProperty('--secondaryColor', theme.dark.secondaryColor);
         document.documentElement.style.setProperty('--stockcardOne', theme.dark.stockcardOne);
         document.documentElement.style.setProperty('--stockcardTwo', theme.dark.stockcardTwo);
-        document.documentElement.style.setProperty('--stockcardThree', theme.dark.stockcardThree);
+        document.documentElement.style.setProperty('--newsback', theme.dark.newsback);
         document.documentElement.style.setProperty('--navbarColor', theme.dark.navbarColor);
         document.documentElement.style.setProperty('--animateColorOne', theme.dark.animateColorOne);
         document.documentElement.style.setProperty('--animateColorTwo', theme.dark.animateColorTwo);
         document.documentElement.style.setProperty('--lowernavbar', theme.dark.lowernavbar);
         document.documentElement.style.setProperty('--footerColor', theme.dark.footerColor);
+        document.documentElement.style.setProperty('--iconColor', theme.dark.iconColor);
+        document.documentElement.style.setProperty('--newsheader', theme.dark.newsheader);
+        document.documentElement.style.setProperty('--newscontent', theme.dark.newscontent);
   
         setModeIcon(theme.dark.modeIcon);
         
@@ -80,12 +89,15 @@ const NavBar=()=>{
         document.documentElement.style.setProperty('--secondaryColor', theme.light.secondaryColor);
         document.documentElement.style.setProperty('--stockcardOne', theme.light.stockcardOne);
         document.documentElement.style.setProperty('--stockcardTwo', theme.light.stockcardTwo);
-        document.documentElement.style.setProperty('--stockcardThree', theme.light.stockcardThree);
+        document.documentElement.style.setProperty('--newsback', theme.light.newsback);
         document.documentElement.style.setProperty('--navbarColor', theme.light.navbarColor);
         document.documentElement.style.setProperty('--animateColorOne', theme.light.animateColorOne);
         document.documentElement.style.setProperty('--animateColorTwo', theme.light.animateColorTwo);
         document.documentElement.style.setProperty('--lowernavbar', theme.light.lowernavbar);
         document.documentElement.style.setProperty('--footerColor', theme.light.footerColor);
+        document.documentElement.style.setProperty('--iconColor', theme.light.iconColor);
+        document.documentElement.style.setProperty('--newsheader', theme.light.newsheader);
+        document.documentElement.style.setProperty('--newscontent', theme.light.newscontent);
   
         setModeIcon(theme.light.modeIcon);
       }
@@ -115,9 +127,11 @@ const NavBar=()=>{
                     <i className="home icon"></i>
                 </div>
                 </Link>
+                <Link to={"/news"}>
                 <div>
                     <i className="newspaper icon"></i>
                 </div>
+                </Link>
                 <div>
                 <Link to={"/info"}>
                     <i className="info circle icon"></i>

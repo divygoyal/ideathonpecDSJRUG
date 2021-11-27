@@ -1,5 +1,6 @@
 import React from "react";
-import "./Body.css"
+import "./Body.css";
+import trail from "./trail.jpg"
 
 const stockInfoCard = (props) => {
     return(
@@ -8,13 +9,25 @@ const stockInfoCard = (props) => {
             <div className="stock-info-card-one">
                 {props}
             </div>
+            <hr />
             <div className="stock-info-card-two">
-            <hr />
-                Prev. Close:{RandomNumber()}
+            
+                <div>
+                    Close:  
+                </div>
+                <div style={{paddingLeft:"8px"}}>
+                    {RandomNumber()}
+                </div>
             </div>
-            <div className="stock-info-card-three">
             <hr />
-                Prev. Open:{RandomNumber()}
+            <div className="stock-info-card-three">
+            
+                <div>
+                    Open:  
+                </div>
+                <div style={{paddingLeft:"8px"}}>
+                    {RandomNumber()}
+                </div>
             </div>
         </div>
         
@@ -42,20 +55,6 @@ const RandomNumber = () => {
     return <p>{number}</p>;
   };
 
-
-const stockNewsCard = (headline,content) => {
-    return (
-        <div className="stock-news-card">
-            <div className="stock-news-card-head">
-                {headline}
-            </div>
-            <p className="stock-news-card-content">
-                {content}
-            </p>
-        </div>
-    );
-}
-
 const Body = () => {
     return (
         <div className="body">
@@ -74,41 +73,113 @@ const Body = () => {
                     <a href="/">see more..</a>
                 </div>
             </div>
-            <div className="news-component">
-                <div className="stock-news-header">
-                    News Related To Top Potential Stocks
+            
+            <div className="trail">
+                <div className="news-head">
+                    stock news
                 </div>
-                <div className="stock-news-container">
-                    {stockNewsCard(
-                        'Closing Bell: Nifty ends below 18,000, Sensex falls 433 pts dragged by auto, metals',
-                        `Index closed a week at 17746 with loss of nearly 
-                        two percent and formed a bearish candle on weekly 
-                        chart hinting weakness in the markets. Now next good 
-                        support for the market is coming near 17600 zone if 
-                        managed to hold above-said levels one can expect a 
-                        good pull back in the index again towards 18k mark but 
-                        if failed to hold then we may see more drag down in Nifty 
-                        towards 17300-17000 mark. The immediate hurdle is coming near 
-                        17830-17940 zone where one can again lock their gains in `
-                    )}
-                    <hr />
-                    {stockNewsCard(
-                        'Paytm’s weak listing: Hang in there, business model is strong: CEO Vijay Shekhar Sharma tells investors',
-                        `Shares of Paytm, the largest and one of the most anticipated IPOs in 
-                        India, plunged by 27 percent from the issue price within hours of listing. 
-                        While Paytm listing has raised larger questions for tech IPOs, fintech, 
-                        and the funding frenzy in startups, Sharma remains hopeful and optimistic.`
-                    )}
-                    <hr />
-                    {stockNewsCard(
-                        'RBI panel recommends separate law to prevent illegal digital lending',
-                        `The recommendations include subjecting the Digital Lending Apps to a 
-                        verification process by a nodal agency to be setup in consultation with
-                         stakeholders and setting up of a Self-Regulatory Organisation (SRO) 
-                         covering the participants in the digital lending ecosystem`
-                        )}
+                <div className="news">
+                    <div className="primary-news">
+                        <img className="prim-news-image" src={trail} />
+                        <div>Coal India subsidiary to set up 50-MW solar plant in Odisha</div>
+                    </div>
+                    <div className="secondary-news">
+                        <div className="stry">
+                            Amazon-Future tussle: CCI says it will pass an order in due course
+                        </div>
+                        <div className="stry">Indusind Bank's Hindujas welcome RBI move to up promoter holding to 26%</div>
+                        <div className="stry">ITC to acquire 16% stake in D2C brand Mother Sparsh</div>
+                        <div className="stry">Fitch affirms Bharti Airtel at 'BBB-'; outlook negative</div>
+                    </div>
                 </div>
-                <br />
+                <div className="indices-table">
+                    <div className="table-head">sectoral indices</div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>indices</th>
+                                <th>price</th>
+                                <th>chg</th>
+                                <th>%chg</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>nifty midcap 100</td>
+                                <td>29,920.40</td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -1006
+                                </td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -3.25
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>nifty it</td>
+                                <td>28,071.41</td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -751.34
+                                </td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -2.61
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>nifty bank</td>
+                                <td>36,0325.50</td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -1339.25
+                                </td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -3.58
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>nifty auto</td>
+                                <td>10,759.60</td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -1339.25
+                                </td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -3.58
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>nifty pharma</td>
+                                <td>10,759.60</td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -1339.25
+                                </td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -3.58
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>nifty FMCG</td>
+                                <td>10,759.60</td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -1339.25
+                                </td>
+                                <td style={{color:'darkred'}}>
+                                    <i style={{fontSize:"12px"}} class="arrow down icon"></i>
+                                    -3.58
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
             </div>
         </div>
     );

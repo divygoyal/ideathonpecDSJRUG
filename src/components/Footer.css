@@ -3,8 +3,7 @@
 .footer-container{
   display: flex;
   justify-content: space-around;
-  min-height: 25vh;
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--footerColor);
   color : white;
   font-size: 3.75vmin;
@@ -22,19 +21,12 @@
   justify-content: left;
   font-size: 3.75vmin;
 }
+.socials-icons a{
+  color:white;
+}
 
 .logo{
-  width: 33vh;
-  margin: none;
-  padding: none;
-}
-
-.footer-socials{
-  padding-top: 8vh;
-}
-
-.footer-links{
-  padding-top: 8vh;
+  width: 30vmin;
 }
 
 .footer-headers::after{
@@ -51,16 +43,12 @@
 }
 
 .madeby{
-  margin-top: 5vmin;
+  background-color:var(--footerColor) ;
   font-style: italic;
-  animation:footer 5s linear infinite alternate-reverse;
-}
-
-@keyframes footer {
-  100%{
-      color:rgba(255, 255, 255, 0.658);
-  }
-  0%{
-      color: white
-  }
+  font-size: 3.5vmin;
+  text-align: center;
+  text-decoration: solid;
+  text-transform: capitalize;
+  color: white;
+  outline: 2px solid white;
 }
