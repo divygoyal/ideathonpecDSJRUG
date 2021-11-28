@@ -1,4 +1,5 @@
 import React from 'react';
+import loader from "./loading.jpeg";
 
 const StocksLoaderStatus = props => {
   if(props.connectionError) {
@@ -10,11 +11,16 @@ const StocksLoaderStatus = props => {
     );
   } else {
     return (
-      <div className='tag is-large is-success'>
+      <div>
+        <div>
+          <img src={loader} alt=""></img>
+        </div>
+        <div className='tag is-large is-success' style={{backgroundColor:"	#ed5e5e"}}>
         
-        <span className='loader'> &nbsp;</span>
+          <span className='loader' > &nbsp;</span>
         
-        &nbsp; &nbsp; Fetching some stocks...
+          &nbsp; &nbsp; Fetching some stocks...
+        </div>
       </div>
 
     );
