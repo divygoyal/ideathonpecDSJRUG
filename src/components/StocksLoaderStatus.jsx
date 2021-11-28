@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const StocksLoaderStatus = props => {
   if(props.connectionError) {
@@ -11,9 +11,12 @@ const StocksLoaderStatus = props => {
   } else {
     return (
       <div className='tag is-large is-success'>
+        
         <span className='loader'> &nbsp;</span>
+        
         &nbsp; &nbsp; Fetching some stocks...
       </div>
+
     );
   }
 }

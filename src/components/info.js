@@ -1,8 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import ReactDOM from 'react-dom';
 import "./info.css";
 import info from './info.jpg';
+
+
 const Appi=()=>{
+
+  //const [scroll,setscroll] = useState('')
+  //setscroll(scroll=>'h1')
+  const handleClick=(e,scrollid)=>{
+    var x = document.getElementById(scrollid)
+    x.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
+    return false
+  };
+  
+
     return(
     <div>
       <div className="get-started">
@@ -11,19 +23,19 @@ const Appi=()=>{
           
           <div className="get-started-points">
             <ol type="a">
-              <li>What is stock market?</li>
-              <li>Why should you know about stock market terminology?</li>
-              <li>Basic Stock Market Terms</li>
-              <li>Stock Market Basics</li>
-              <li>What are shares?</li>
-              <li>Why do companies need shares?</li>
-              <li>What are stock exchanges and how many are there?</li>
-              <li>What are Nifty and Sensex?</li>
-              <li>What are Nifty and Sensex?</li>
-              <li>When can you conduct stock market transactions?</li>
-              <li>How do you make money from Stocks?</li>
-              <li>what is Share Market?</li>
-              <li>What Is Traded On The Share Market?</li>
+              <li onClick={e=> handleClick(e,'h1')}>What is stock market?</li>
+              <li onClick={e=> handleClick(e,'h2')}>Why should you know about stock market terminology?</li>
+              <li onClick={e=> handleClick(e,'h3')}>Basic Stock Market Terms</li>
+              <li onClick={e=> handleClick(e,'h4')}>Stock Market Basics</li>
+              <li onClick={e=> handleClick(e,'h5')}>What are shares?</li>
+              <li onClick={e=> handleClick(e,'h6')}>Why do companies need shares?</li>
+              <li onClick={e=> handleClick(e,'h7')}>What are stock exchanges and how many are there?</li>
+              <li onClick={e=> handleClick(e,'h8')}>What are Nifty and Sensex?</li>
+              <li onClick={e=> handleClick(e,'h9')}>When can you conduct stock market transactions?</li>
+              <li onClick={e=> handleClick(e,'h10')}>How do you make money from Stocks?</li>
+              <li onClick={e=> handleClick(e,'h11')}>What is Share Market?</li>
+              <li onClick={e=> handleClick(e,'h12')}>Type Of Share Markets</li>
+              <li onClick={e=> handleClick(e,'h13')}>What Is Traded On The Share Market?</li>
             </ol>
           </div>
           <div className="info-image">
@@ -32,24 +44,24 @@ const Appi=()=>{
         </div>
 
       </div>
-      <hr style={{margin:"0"}}/>
+      
     <div className="stock" id="stock">
-        <p className="heading">
+        <p className="heading" id="h1" >
         What is stock market?
         </p>
         <p className="content">
         Stock market is a place where equity shares of companies are bought and sold by the participants (buyers and sellers of stocks). The participants can be investors and traders who seek profits over the short time or the long run. The investors mainly have a long-term horizon and benefit from capital appreciation over time. Traders, however, look for quick profits by focusing on the small price changes in equity shares which mostly last for a few minutes or the whole trading session.<br />
-        <hr />In India, the Bombay Stock Exchange and National Stock Exchange are the major platforms where most of the stock trading happens. Here, the buyers and sellers place orders through brokers who offer online trading services. The settlement cycle follows the T+2 format. In simple terms, you have two days for the trade cycle to be completed from initiation to final settlement.
+        In India, the Bombay Stock Exchange and National Stock Exchange are the major platforms where most of the stock trading happens. Here, the buyers and sellers place orders through brokers who offer online trading services. The settlement cycle follows the T+2 format. In simple terms, you have two days for the trade cycle to be completed from initiation to final settlement.
         The first step of the trade life cycle involves placing the order. It is followed by the matching and execution of the placed order. The clearing house of the stock exchange would then clear the trade. The final stage is the settlement which involves the pay in and pay out of funds and securities which takes place on the last day of the trade cycle.
         </p>
-        <p className="heading">
+        <p className="heading" id="h2">
         Why should you know about stock market terminology?
         </p>
         <p className="content">
         Stock market terminology relates to industry-specific jargon which are used in the stock markets regularly. Even the experts and amateurs use these terms frequently to explain trading strategies, indices, stock market patterns and other components of the stock market. As an equity enthusiast, you must know these terms really well in order to make money in the stock markets. Moreover, it will also enhance your understanding of the relationship between stock markets and events happening in the economy.
         <br /> Some of the most common terms used in the stock market are the bull and the bear market. When the stock market is on the rise and the economy is sound, you have a bull market. If the stock market experiences prolonged periods of price declines, you have a bear market. It’s typically a condition where the prices of securities fall by 20% from the recent highs
         </p>
-        <p className="heading">
+        <p className="heading" id="h3">
         Basic Stock Market Terms
         </p>
         <p className="content">
@@ -82,34 +94,34 @@ const Appi=()=>{
           <br />  <text className="void"> • Volume: </text><br />It shows the average number of stocks which are traded during a particular time, usually the daily trading volume.
           <br />  <text className="void"> • Dividend Yield:</text><br /> It shows how much a company or firm pays out in dividends every year as compared to the stock price.
         </p>
-        <p className="heading">
+        <p className="heading" id="h4">
         Stock Market Basics
         </p>
         <p className="content">
         All companies need money to run their business. Sometimes the profit acquired from selling goods or services is not sufficient to meet the working capital requirements. And so, companies invite normal people like you and me to put some money in their company so that they can run it efficiently and in return investors get a share of whatever profit they make. Understanding this is the first step towards understanding stock market basics. Let’s learn about this in detail
         </p>
-        <p className="heading">
+        <p className="heading" id="h5">
         What are shares?
         </p>
         <p className="content">
         Shares are a way to own a part of the company’s value. In proportion to the capital you invest, you can get ownership rights to a certain percentage in the company. Say you own 2% of the shares being traded in the market, you can say you have 2% ownership in the company.
         Hence, shares are units of ownership in the company and its financial assets. Shares are also known as stocks, equity, scrips etc. After purchasing them you will be known as a stockholder or a shareholder of the company.
         </p>
-        <p className="heading">
+        <p className="heading" id="h6">
         Why do companies need shares?
         </p>
         <p className="content">
         Why does a company need money from the market? As mentioned before, when a company is scaling up, expanding its business etc, it will need more capital. During such times, a company can tap into the share market and offer a certain number of shares based on its market value, which investors can buy.
         Investors will be paying the company some money and in return get to be part owners. So when the value of shares rises, the value of shares investors own rises. Investors are however not lending money to the company so they are not creditors. These indeed share market basics for beginners because it is essential to understand why companies need shares at all.
         </p>
-        <p className="heading">
+        <p className="heading" id="h7">
         What are stock exchanges and how many are there?
         </p>
         <p className="content">
         Stock exchanges is a place or a platform where traders and buyers come together to buy and sell stocks. There are two primary stock exchanges in the country: Bombay Stock Exchange (BSE) and National Stock Exchange
         (NSE). This is extremely important information to know about stock market basics in India.
         </p>
-        <p className="heading">
+        <p className="heading" id="h8">
         What are Nifty and Sensex?
         </p>
         <p className="content">
@@ -120,13 +132,13 @@ const Appi=()=>{
         group the top stocks in each sector which helps us to understand how the sector is doing.
         <br /> In Short: Indices tell us in ashort, concise and easy way, how is the market doing.
         </p>
-        <p className="heading">
+        <p className="heading" id="h9">
         When can you conduct stock market transactions?
         </p>
         <p className="content">
         To know about the stock market basics in India, you should also know when you are permitted to buy and sell shares. The stock market business hours in India run from 9.15 a.m. to 3.30 p.m. There are a few days in the country when the stock market is shut, they are known as market holidays. Few examples of market holidays are Holi, Id, Independence Day, Republic Day etc.
         </p>
-        <p className="heading">
+        <p className="heading" id="h10">
         How do you make money from Stocks?
         </p>
         <p className="content">
@@ -136,15 +148,15 @@ const Appi=()=>{
         time. Investors use fundamental analysis. They look at the growth trajectory of the company because your investment literally grows with the company in the long term.
         <br /> <text className="void">Stock traders:</text><br /> Stock traders generally buy and sell within the same trading session. Traders use technical analysis to understand which stocks to invest in. Traders look for short and quick gains. Stock trading basics will require you to learn technical indicators like momentum oscillators, bollinger bands, charts and more.
         </p>
-        <p className="heading">
+        <p className="heading" id="h11">
         What is Share Market?
         </p>
         <p className="content">
         A market where shares are publicly issued and traded is known as a share market. The answer to ‘what is stock market’ is pretty similar to that of a share market. The key difference between share markets and stock markets is that the former only allows one to trade shares. The latter allows you to trade in financial instruments such as derivatives, bonds, mutual funds, as well as the shares of listed companies.
         The key factor is that the basic platform offers trading facilities that companies can use to trade stocks in the stock market. On a stock exchange, one can only buy and sell those stocks that are listed on it. Hence, buyers and sellers meet on a stock market. India’s prime stock exchanges are the National Stock Exchange and the Bombay Stock Exchange.
         </p>
-        <p className="heading">
-         Types Of Share Markets:-
+        <p className="heading" id="h12">
+         Type Of Share Markets:-
         </p>
         <p className="content">
         Now that we understand the stock market meaning, one key aspect of stock market basics is that one can trade on one of two market segments. In other words, there are two types of share markets in India. These are primary markets and secondary markets.
@@ -155,7 +167,7 @@ const Appi=()=>{
         Based on whatever prices the two parties agree to set or the prevailing market price, one investor will buy shares from another on a secondary market. Typically investors conduct these transactions through a broker or other such intermediary
         who can facilitate this process. Brokers offer these trading opportunities at different plans.
         </p>
-        <p className="heading">
+        <p className="heading" id="h13">
         What Is Traded On The Share Market?
         </p>
         <p className="content">
@@ -181,5 +193,5 @@ const Appi=()=>{
 };
 
 ReactDOM.render(<Appi />,document.querySelector("#root"));
-
+  
 export default Appi;

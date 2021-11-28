@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Dashboard from './components/Dashboard.jsx'
 import UnsafeScriptsWarning from "./components/UnsafeScriptsWarning";
+import "./components/Dashboard.css"
 
 class App extends Component {
 

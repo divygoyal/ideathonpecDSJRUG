@@ -41,6 +41,8 @@ const NavBar=()=>{
           newscontent:'#950740',
           bodyColor:'rgba(0,0,0,0.9)',
           iconColor:'orange',
+          stockgraph:'#262626',
+          stockgraphcontent:'white',
           modeIcon: lightModeIcon,
       }, 
       light: {
@@ -57,6 +59,8 @@ const NavBar=()=>{
           newscontent:'#8860d0',
           footerColor:'#8c66ff',
           bodyColor:'white',
+          stockgraph:'white',
+          stockgraphcontent:'black',
           iconColor:'rgba(0,0,0,0.7)',
         modeIcon: darkModeIcon,
       }
@@ -80,6 +84,8 @@ const NavBar=()=>{
         document.documentElement.style.setProperty('--iconColor', theme.dark.iconColor);
         document.documentElement.style.setProperty('--newsheader', theme.dark.newsheader);
         document.documentElement.style.setProperty('--newscontent', theme.dark.newscontent);
+        document.documentElement.style.setProperty('--stockgraph', theme.dark.stockgraph);
+        document.documentElement.style.setProperty('--stockgraphcontent', theme.dark.stockgraphcontent);
   
         setModeIcon(theme.dark.modeIcon);
         
@@ -98,6 +104,8 @@ const NavBar=()=>{
         document.documentElement.style.setProperty('--iconColor', theme.light.iconColor);
         document.documentElement.style.setProperty('--newsheader', theme.light.newsheader);
         document.documentElement.style.setProperty('--newscontent', theme.light.newscontent);
+        document.documentElement.style.setProperty('--stockgraph', theme.light.stockgraph);
+        document.documentElement.style.setProperty('--stockgraphcontent', theme.light.stockgraphcontent);
   
         setModeIcon(theme.light.modeIcon);
       }

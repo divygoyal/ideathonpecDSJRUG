@@ -74,7 +74,7 @@ class StocksGraph extends React.Component {
     return (
       <div className={'card column'} >
         <div className='card-header'>
-          <div className='card-header-title'>
+          <div className='card-header-title' id="card-heading">
             Graph
           </div>
         </div>
