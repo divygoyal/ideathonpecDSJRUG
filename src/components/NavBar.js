@@ -19,8 +19,20 @@ const darkModeIcon = 'moon icon';
 const lightModeIcon = 'sun icon';
 
 
-
 const NavBar=()=>{
+    const pathname = window.location.pathname
+    console.log(pathname)
+    const getcolor = (curr) => {
+        if(pathname===curr){
+            return {
+                color:"rgba(0,0,0,0.5)",
+                fontSize:"4.25vh",
+            }
+        }
+        else{
+            return {color:""}
+        }
+    }
 
     const [darkMode, setDarkMode] = useState(false);
     const [modeIcon, setModeIcon] = useState(darkModeIcon);
@@ -30,7 +42,7 @@ const NavBar=()=>{
           animateColorOne: '#950740',
           animateColorTwo: '#c2023b',
           lowernavbar: '#950740',
-          navbarColor:'rgba(0,0,0,0.85)',
+          navbarColor:'rgba(0,0,0,0.8)',
           primaryColor : '#121212',
           secondaryColor : '#950740',
           stockcardOne : '#950740',
@@ -131,18 +143,18 @@ const NavBar=()=>{
             </div>
             <div className="lower-header">
             <Link to={"/"}>
-                <div className="header-home-icon">
-                    <i className="home icon"></i>
+                <div className="header-home-icon" >
+                    <i style={getcolor("/")} className="home icon"></i>
                 </div>
                 </Link>
                 <Link to={"/news"}>
                 <div>
-                    <i className="newspaper icon"></i>
+                    <i style={getcolor("/news")} className="newspaper icon"></i>
                 </div>
                 </Link>
                 <div>
                 <Link to={"/info"}>
-                    <i className="info circle icon"></i>
+                    <i style={getcolor("/info")} className="info circle icon"></i>
                     </Link>
                 </div>
             </div>
