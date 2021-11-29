@@ -58,6 +58,10 @@ this is for reference please ignore delete this
     padding-left: 15vh;
 
 }
+.get-started-points li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .get-started-points{
     color: white;
     font-size: 3.5vh;

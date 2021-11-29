@@ -3,6 +3,7 @@ import * as bulma from "reactbulma";
 import StocksList from "./StocksList.jsx";
 import StocksGraph from "./StocksGraph.jsx";
 import StocksLoaderStatus from "./StocksLoaderStatus.jsx";
+import "./Dashboard.css";
 
 
 const stocksUrl = 'ws://stocks.mnet.website/';

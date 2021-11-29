@@ -9,6 +9,11 @@
     color:var(--newsheader)
 }
 
+.stock-news-container hr{
+    height: 1px;
+    background-color:var(--newscontent);
+}
+
 .stock-news-container{
     margin: 70px 70px 100px 70px;
     outline: 2px solid var(--newsheader);
@@ -41,4 +46,11 @@
 
 .news-component{
     text-align: center;
+}
+
+.stock-news-card{
+    display: flex;
+}
+.stock-news-card img{
+    width:400px;
 }

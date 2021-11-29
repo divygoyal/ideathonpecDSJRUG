@@ -1,15 +1,22 @@
 import React from "react";
-import "./stockNews.css"
+import "./stockNews.css";
+import endslow from "./endslow.jpg"
+import rbi from "./rbi.jpg"
+import paytm from "./paytm.jpg"
+import { Link } from "react-router-dom";
 
-const stockNewsCard = (headline,content) => {
+const stockNewsCard = (link,headline,content) => {
     return (
         <div className="stock-news-card">
-            <div className="stock-news-card-head">
-                {headline}
+            <img src={link} />
+            <div>
+                <div className="stock-news-card-head">
+                    {headline}
+                </div>
+                <p className="stock-news-card-content">
+                    {content}
+                </p>
             </div>
-            <p className="stock-news-card-content">
-                {content}
-            </p>
         </div>
     );
 }
@@ -20,10 +27,11 @@ const StockNews = () => {
             <div className="news-component">
                 
                 <div className="stock-news-header">
-                    News Related To Top Potential Stocks
+                    News thats moving markets
                 </div>
                 <div className="stock-news-container">
                     {stockNewsCard(
+                        endslow,
                         'Closing Bell: Nifty ends below 18,000, Sensex falls 433 pts dragged by auto, metals',
                         `Index closed a week at 17746 with loss of nearly 
                         two percent and formed a bearish candle on weekly 
@@ -37,6 +45,7 @@ const StockNews = () => {
                     )}
                     <hr />
                     {stockNewsCard(
+                        paytm,
                         'Paytm’s weak listing: Hang in there, business model is strong: CEO Vijay Shekhar Sharma tells investors',
                         `Shares of Paytm, the largest and one of the most anticipated IPOs in 
                         India, plunged by 27 percent from the issue price within hours of listing. 
@@ -45,6 +54,7 @@ const StockNews = () => {
                     )}
                     <hr />
                     {stockNewsCard(
+                        rbi,
                         'RBI panel recommends separate law to prevent illegal digital lending',
                         `The recommendations include subjecting the Digital Lending Apps to a 
                         verification process by a nodal agency to be setup in consultation with

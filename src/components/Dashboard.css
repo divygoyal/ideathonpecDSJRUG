@@ -1,0 +1,38 @@
+
+.columns{
+    background-color: var(--stockgraph);
+    color: var(--stockgraphcontent);
+}
+
+.container{
+    background-color: var(--stockgraph);
+    color: var(--stockgraphcontent);
+}
+
+.card{
+    background-color: var(--stockgraph);
+    color: var(--stockgraphcontent);
+}
+
+.card-header{
+    background-color: var(--stockgraph);
+    color: var(--stockgraphcontent) ;
+}
+.card-content{
+    background-color: var(--stockgraph);
+    color: var(--stockgraphcontent);
+}
+.table{
+    background-color: var(--stockgraph);
+    color: var(--stockgraphcontent);
+}
+
+.table th{
+    color: var(--stockgraphcontent) !important;
+}
+
+#card-heading{
+    color:var(--footerColor) !important;
+}
+
+

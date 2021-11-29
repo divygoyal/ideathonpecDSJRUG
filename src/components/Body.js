@@ -117,7 +117,7 @@ const Body = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td>nifty it</td>
+                                <td>nifty IT</td>
                                 <td>28,071.41</td>
                                 <td style={{color:'darkred'}}>
                                     <i style={{fontSize:"12px"}} class="arrow down icon"></i>

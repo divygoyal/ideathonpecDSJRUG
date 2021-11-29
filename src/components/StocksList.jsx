@@ -8,7 +8,7 @@ const StocksList = (props) => {
   return (
     <div className='card column is-one-third' id='stocks_list'>
       <div className='card-header'>
-        <div className='card-header-title'>
+        <div className='card-header-title' id="card-heading">
           Stocks
           &nbsp;
           <Detector

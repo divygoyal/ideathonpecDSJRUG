@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "./logo.png";
 
@@ -34,9 +35,15 @@ const FooterComponent = () => {
             links
           </div>
           <ul className="links-content" style={{listStyleType:"disc"}}>
+            <Link to="/">
             <li>home</li>
+            </Link>
+            <Link to="/info">
             <li>info page</li>
+            </Link>
+            <Link to="/news">
             <li>news</li>
+            </Link>
           </ul>
         </div>
 
