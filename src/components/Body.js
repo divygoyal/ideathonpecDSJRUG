@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Body.css";
 import trail from "./trail.jpg"
 
@@ -75,6 +76,7 @@ const Body = () => {
             </div>
             
             <div className="trail">
+                <Link to="/news">
                 <div className="news-head">
                     stock news
                 </div>
@@ -92,6 +94,7 @@ const Body = () => {
                         <div className="stry">Fitch affirms Bharti Airtel at 'BBB-'; outlook negative</div>
                     </div>
                 </div>
+                </Link>
                 <div className="indices-table">
                     <div className="table-head">sectoral indices</div>
                     <table>

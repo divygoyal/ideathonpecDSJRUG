@@ -13,7 +13,7 @@ const StocksLoaderStatus = props => {
     return (
       <div>
         <div>
-          <img src={loader} alt=""></img>
+          <img style={{width:"100%"}} src={loader} alt=""></img>
         </div>
         <div className='tag is-large is-success' style={{backgroundColor:"	#ed5e5e"}}>
         

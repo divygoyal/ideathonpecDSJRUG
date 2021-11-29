@@ -52,5 +52,10 @@
     display: flex;
 }
 .stock-news-card img{
-    width:400px;
+    width:27vw;
+}
+@media screen and (max-width:480px) {
+    .stock-news-card img{
+        display: none;
+    }
 }
