@@ -24,7 +24,7 @@ const NavBar=()=>{
     const getcolor = (curr) => {
         if(pathname===curr){
             return {
-                color:"rgba(0,0,0,0.5)",
+                color:"rgba(0,0,0,0.35)",
                 fontSize:"4.25vh",
             }
         }
