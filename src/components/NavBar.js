@@ -21,11 +21,10 @@ const lightModeIcon = 'sun icon';
 
 const NavBar=()=>{
     const pathname = window.location.pathname
-    console.log(pathname)
     const getcolor = (curr) => {
         if(pathname===curr){
             return {
-                color:"rgba(0,0,0,0.5)",
+                color:"rgba(0,0,0,0.35)",
                 fontSize:"4.25vh",
             }
         }
@@ -58,7 +57,7 @@ const NavBar=()=>{
           modeIcon: lightModeIcon,
       }, 
       light: {
-          navbarColor : 'rgba(229, 236, 255,0.92)',
+          navbarColor : 'rgba(229, 236, 255,0.9)',
           animateColorOne: '#5680e9',
           lowernavbar:'#5680E9',
           animateColorTwo: '#5ab9ea',
